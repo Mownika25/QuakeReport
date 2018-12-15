@@ -1,7 +1,7 @@
 
 package com.example.android.quakereport;
 /**
- * {@link Word} represents a vocabulary word that the user wants to learn.
+ * {@link Earthquake} represents a vocabulary word that the user wants to learn.
  * It contains a default translation and a Miwok translation for that word.
  */
 public class Earthquake {
@@ -17,9 +17,10 @@ public class Earthquake {
     /**
      * Create a new Word object.
      *
-     * @param defaultTranslation is the word in a language that the user is already familiar with
+     * @param magnitude is the word in a language that the user is already familiar with
      *                           (such as English)
-     * @param miwokTranslation is the word in the Miwok language
+     * @param location
+     * is the word in the Miwok language
      */
     public Earthquake(double magnitude, String location, long timeInMilliseconds, String url) {
         mMagnitude = magnitude;
